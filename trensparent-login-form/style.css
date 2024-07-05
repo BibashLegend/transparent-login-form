@@ -1,0 +1,77 @@
+/* Universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*we are keeping background image for whole screen*/
+body {
+  /*always write inside inverted comma*/
+  background-image: url("https://images.wallpaperscraft.com/image/single/guy_warrior_anime_221716_1600x900.jpg");
+  background-size: cover;
+  background-color: rgb(1, 39, 39);
+  overflow: hidden;
+}
+
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.form-section {
+  /* background-color: rgba(89, 160, 163, 0.281); */
+  backdrop-filter: blur(.3rem);
+  padding: 2em;
+  box-shadow: -1px 7px 21px 7px rgb(0, 0, 0);
+  min-width: 35%;
+  border-radius: 15px;
+}
+
+label {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  color: white;
+}
+
+input {
+  font-size: 1.5em;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: .2em .5em;
+}
+
+.signin-btn {
+  margin: 1em 0;
+  cursor: pointer;
+  background-color: rgb(155, 162, 168);
+  color: white;
+}
+.input-btn{
+  border-radius: 5px;
+  background-color: rgba(195, 230, 230, 0.493);
+}
+.input-btn:focus{
+  border: 1px solid black;
+}
+.signin-btn:hover{
+  background-color: solid black;
+}
